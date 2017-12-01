@@ -42,8 +42,8 @@ function draw (){
     
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = p.color;
-            ctx.fill();
+    ctx.fillStyle = p.color;
+    ctx.fill();
 
 }
     
@@ -54,8 +54,8 @@ var move = function() {
    
     particle.forEach(function (p){
         
-        p.x += p.xVel;
-        p.y += p.yVel;
+    p.x += p.xVel;
+    p.y += p.yVel;
         
     });
     
@@ -64,9 +64,9 @@ var move = function() {
 var fade = function ()
  {
      
-       particle.forEach(function (p){
+    particle.forEach(function (p){
         
-        p.radius *= 0.99;
+    p.radius *= 0.99;
         
     });
     
